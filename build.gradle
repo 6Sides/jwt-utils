@@ -28,7 +28,7 @@ dependencies {
     implementation 'org.json:json:20080701'
 
     // JWT - Library to create & verify JWTs
-    implementation 'com.auth0:java-jwt:3.8.1'
+    compile 'com.auth0:java-jwt:3.8.1'
 
     // Bcrypt - Used for password hashing & verification
     implementation 'at.favre.lib:bcrypt:0.8.0'
