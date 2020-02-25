@@ -1,7 +1,6 @@
-package dashflight.jwt.jwt;
+package dashflight.jwt;
 
 
-import dashflight.jwt.FingerprintService;
 import dashflight.jwt.keys.DefaultRSAKeyManager;
 import dashflight.jwt.keys.RSAKeyManager;
 

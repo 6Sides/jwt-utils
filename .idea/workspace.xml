@@ -2,8 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af701e0f-a423-461a-9660-ee55bb266c16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dashflight/jwt/jwt/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/dashflight/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/dashflight/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/dashflight/jwt/RefreshTokenService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/dashflight/jwt/RefreshTokenService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/dashflight/jwt/jwt/JwtCreator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/dashflight/jwt/jwt/JwtOperator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/dashflight/jwt/jwt/JwtVerifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/dashflight/jwt/random/LavaRandom$LavaRandomGenerator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/dashflight/jwt/random/LavaRandom$LavaRandomGenerator$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/dashflight/jwt/random/LavaRandom$LavaRandomGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/dashflight/jwt/random/LavaRandom$LavaRandomGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/dashflight/jwt/random/LavaRandom.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/dashflight/jwt/random/LavaRandom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dashflight/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dashflight/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dashflight/jwt/JwtCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dashflight/jwt/cache/JwtCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dashflight/jwt/RefreshTokenCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dashflight/jwt/cache/RefreshTokenCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dashflight/jwt/RefreshTokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dashflight/jwt/RefreshTokenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dashflight/jwt/jwt/JwtCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dashflight/jwt/JwtCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dashflight/jwt/jwt/JwtOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dashflight/jwt/JwtOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dashflight/jwt/jwt/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dashflight/jwt/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dashflight/jwt/jwt/JwtVerifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dashflight/jwt/JwtVerifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dashflight/jwt/jwt/SecuredJwtToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dashflight/jwt/SecuredJwtToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dashflight/jwt/random/LavaRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dashflight/jwt/random/LavaRandom.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +79,9 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
+      <envs>
+        <env name="environment" value="development" />
+      </envs>
       <option name="MAIN_CLASS_NAME" value="dashflight.Main" />
       <module name="JwtUtil.main" />
       <extension name="net.ashald.envfile">
@@ -82,22 +109,38 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582667553829</updated>
-      <workItem from="1582667558345" duration="1542000" />
+      <workItem from="1582667558345" duration="2653000" />
     </task>
+    <task id="LOCAL-00001" summary="Added entrypoint">
+      <created>1582669134037</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582669134037</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added entrypoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added entrypoint" />
   </component>
   <component name="WindowStateProjectService">
     <state x="636" y="205" key="#Main" timestamp="1582668360683">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="636" y="205" key="#Main/-1080.-354.1080.1920/1920.809.1792.1120/0.0.1920.1080@0.0.1920.1080" timestamp="1582668360683" />
-    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582668354893">
+    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582669672685">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1080.-354.1080.1920/1920.809.1792.1120/0.0.1920.1080@0.0.1920.1080" timestamp="1582668354893" />
+    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1080.-354.1080.1920/1920.809.1792.1120/0.0.1920.1080@0.0.1920.1080" timestamp="1582669672685" />
+    <state x="647" y="350" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582669410963">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="647" y="350" key="#com.intellij.fileTypes.FileTypeChooser/-1080.-331.1080.1897/1920.832.1792.1097/0.0.1920.1080@0.0.1920.1080" timestamp="1582669410963" />
     <state x="697" y="331" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1582668350301">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -106,22 +149,30 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="717" y="399" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1080.-354.1080.1920/1920.809.1792.1120/0.0.1920.1080@0.0.1920.1080" timestamp="1582668283934" />
-    <state width="1920" height="311" key="GridCell.Tab.0.bottom" timestamp="1582668379652">
+    <state x="543" y="142" key="CommitChangelistDialog2" timestamp="1582669133944">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1920" height="311" key="GridCell.Tab.0.bottom/-1080.-354.1080.1920/1920.809.1792.1120/0.0.1920.1080@0.0.1920.1080" timestamp="1582668379652" />
-    <state width="1920" height="311" key="GridCell.Tab.0.center" timestamp="1582668379648">
+    <state x="543" y="142" key="CommitChangelistDialog2/-1080.-354.1080.1920/1920.809.1792.1120/0.0.1920.1080@0.0.1920.1080" timestamp="1582669133944" />
+    <state width="1920" height="311" key="GridCell.Tab.0.bottom" timestamp="1582670187667">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1920" height="311" key="GridCell.Tab.0.center/-1080.-354.1080.1920/1920.809.1792.1120/0.0.1920.1080@0.0.1920.1080" timestamp="1582668379648" />
-    <state width="1920" height="311" key="GridCell.Tab.0.left" timestamp="1582668379646">
+    <state width="1920" height="311" key="GridCell.Tab.0.bottom/-1080.-354.1080.1920/1920.809.1792.1120/0.0.1920.1080@0.0.1920.1080" timestamp="1582670187667" />
+    <state width="1920" height="311" key="GridCell.Tab.0.center" timestamp="1582670187662">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1920" height="311" key="GridCell.Tab.0.left/-1080.-354.1080.1920/1920.809.1792.1120/0.0.1920.1080@0.0.1920.1080" timestamp="1582668379646" />
-    <state width="1920" height="311" key="GridCell.Tab.0.right" timestamp="1582668379650">
+    <state width="1920" height="311" key="GridCell.Tab.0.center/-1080.-354.1080.1920/1920.809.1792.1120/0.0.1920.1080@0.0.1920.1080" timestamp="1582670187662" />
+    <state width="1920" height="311" key="GridCell.Tab.0.left" timestamp="1582670187657">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1920" height="311" key="GridCell.Tab.0.right/-1080.-354.1080.1920/1920.809.1792.1120/0.0.1920.1080@0.0.1920.1080" timestamp="1582668379650" />
+    <state width="1920" height="311" key="GridCell.Tab.0.left/-1080.-354.1080.1920/1920.809.1792.1120/0.0.1920.1080@0.0.1920.1080" timestamp="1582670187657" />
+    <state width="1920" height="311" key="GridCell.Tab.0.right" timestamp="1582670187665">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1920" height="311" key="GridCell.Tab.0.right/-1080.-354.1080.1920/1920.809.1792.1120/0.0.1920.1080@0.0.1920.1080" timestamp="1582670187665" />
+    <state x="560" y="280" key="Vcs.Push.Dialog.v2" timestamp="1582669136431">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="560" y="280" key="Vcs.Push.Dialog.v2/-1080.-354.1080.1920/1920.809.1792.1120/0.0.1920.1080@0.0.1920.1080" timestamp="1582669136431" />
     <state x="743" y="464" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582668599113">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

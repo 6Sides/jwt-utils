@@ -22,7 +22,9 @@ public class LavaRandom implements RandomGenerator {
     private final SecureRandom backupRandom = new SecureRandom();
 
     static {
-        new Thread(producer).start();
+        Thread t = new Thread(producer);
+        t.setDaemon(true);
+        t.start();
     }
 
     @Override

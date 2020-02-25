@@ -1,4 +1,4 @@
-package dashflight.jwt.jwt;
+package dashflight.jwt;
 
 /**
  * Stores a JWT token and the fingerprint associated with it.

@@ -1,4 +1,4 @@
-package dashflight.jwt;
+package dashflight.jwt.cache;
 
 import net.dashflight.data.redis.BasicRedisCache;
 

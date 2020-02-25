@@ -1,6 +1,7 @@
 package dashflight.jwt;
 
 import config.parser.ConfigValue;
+import dashflight.jwt.cache.RefreshTokenCache;
 import dashflight.jwt.random.LavaRandom;
 import dashflight.jwt.random.RandomGenerator;
 import javax.xml.bind.DatatypeConverter;
