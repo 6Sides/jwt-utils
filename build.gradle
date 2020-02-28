@@ -33,8 +33,7 @@ dependencies {
     // Bcrypt - Used for password hashing & verification
     implementation 'at.favre.lib:bcrypt:0.8.0'
 
-
-    implementation 'com.github.6Sides:data-utils:7419b821b1'
+    implementation 'com.github.6Sides:data-utils:e077836bd0'
 
     implementation platform('com.amazonaws:aws-java-sdk-bom:1.11.228')
     implementation 'com.amazonaws:aws-java-sdk-s3'
