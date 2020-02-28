@@ -3,6 +3,7 @@ package dashflight.jwt;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTCreationException;
+import java.time.Instant;
 import java.util.Date;
 import net.dashflight.data.ConfigValue;
 
@@ -12,7 +13,7 @@ import net.dashflight.data.ConfigValue;
 public class JwtCreator extends JwtOperator {
 
     @ConfigValue("access_token_ttl")
-    private static int ACCESS_TOKEN_TTL;
+    private int ACCESS_TOKEN_TTL;
 
     public JwtCreator() {
         super();
@@ -33,7 +34,7 @@ public class JwtCreator extends JwtOperator {
             String token = JWT.create()
                             .withIssuer(ISSUER)
                             .withIssuedAt(new Date())
-                            .withExpiresAt(new Date(System.currentTimeMillis() + ACCESS_TOKEN_TTL))
+                            .withExpiresAt(Date.from(Instant.now().plusSeconds(ACCESS_TOKEN_TTL)))
                             .withClaim("user_id", userId)
                             .withClaim("user_fingerprint", fgpService.hashFingerprint(fgp))
                             .sign(Algorithm.RSA512(null, keyManager.getPrivateKey()));

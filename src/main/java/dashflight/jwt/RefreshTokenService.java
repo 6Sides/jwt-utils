@@ -27,7 +27,7 @@ public class RefreshTokenService extends ConfigurableDataSource {
      * The amount of time (in seconds) that the token should remain valid.
      */
     @ConfigValue("refresh_token_ttl")
-    private static int TOKEN_TTL;
+    private int TOKEN_TTL;
 
     private RedisClient redisCache = RedisFactory.withDefaults();
     private RandomGenerator secureRandom = new LavaRandom();

@@ -1,15 +1,22 @@
 package dashflight;
 
 import com.auth0.jwt.interfaces.DecodedJWT;
+import dashflight.jwt.JwtCreator;
 import dashflight.jwt.JwtUtil;
+import dashflight.jwt.SecuredJwtToken;
 
 public class Main {
 
     public static void main(String[] args) {
         DecodedJWT jwt = new JwtUtil().verifySession(
-                "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJ1c2VyX2lkIjoiOTExOWFjNDYtMmZmYi0xMWVhLTk3OGYtMmU3MjhjZTg4MTI1IiwiaXNzIjoiaHR0cHM6Ly9hcGkuZGFzaGZsaWdodC5uZXQiLCJleHAiOjE1ODI5MTYwMTYsImlhdCI6MTU4MjkxNTExNiwidXNlcl9maW5nZXJwcmludCI6IjI3MTI0QzhBNEZBRUVCNUIwOUU5OURFQkYyQzZCOUI3QkI1MEZDNjRENzhFMUEyOEMzRTdDMjkyOUM1Q0NGQTYifQ.huDxIbK-POBIkbPUe1Aw3b3NR0pvU-L3i0BASbQN7pvImMMDCIpuilIIr5MvFcu_dmV8HNZ6ccQZntcAWIQ-FVQsTYgcA-ybLpAFmI66KtuBynDLGssR2gPAvSvItsnI14n4t43p3KiDGR13Z2BOk9K_z4zkO_2M1bHsze2RLFI",
-                "BC3D0FB397680B99A796A2EE8BA9002A3AFF6998A204DE8878DD9ACA7917212233C93046CE694CFBF7DE0B23DBEF5587FF940A55B7E75D4922F495AF5FF497BE");
+                "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJ1c2VyX2lkIjoidGVzdHVpZCIsImlzcyI6Imh0dHBzOi8vYXBpLmRhc2hmbGlnaHQubmV0IiwiZXhwIjoxNTgyOTE1NDUyMTQ2LCJpYXQiOjE1ODI5MTU0NTIsInVzZXJfZmluZ2VycHJpbnQiOiJBOUMzNzNBNUI5RURBMzcxQTQ0QzRCRTQxRjI0RDQ0MzY3MEQxMTdEREM0RUJCOTk5QTk3RDAwNUUxOUFGRkY1In0.Fcm7WgVOH1G8Qn3uRFpFPPwLmInePyYDW0RbBOdA2JY2RkE2Vpv-8HzOnABic93j0ZM2lETDusZMSmRPgwD4u7OClStexMebDBweVnrJRyrdKZdo_B7yYrkIVjbBid-wAG1YDdc4eW20tYy2o1TaXQ1QB0_K10JrTay5gbVH67k",
+                "33994B3CC77C5AFAE8D707B4ED733BCF056ECB697C96EDBBFA98506B8ACDEAFE13D929AB2340E2479FD98750B6C9693A1DE3EF17732F1E7AB4AAC0988C2547AC");
 
         System.out.println(jwt.getClaim("user_id").asString());
+
+        SecuredJwtToken token = new JwtCreator().generateJwt("testuid");
+
+        System.out.println(token.getToken());
+        System.out.println(token.getFingerprint());
     }
 }
