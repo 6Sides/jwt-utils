@@ -15,9 +15,6 @@ public class JwtCreator extends JwtOperator {
     @ConfigValue("access_token_ttl")
     private int ACCESS_TOKEN_TTL;
 
-    public JwtCreator() {
-        super();
-    }
 
     /**
      * Creates a secure JWT with the userId encoded in its payload.

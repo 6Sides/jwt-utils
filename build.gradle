@@ -34,7 +34,7 @@ dependencies {
     implementation 'at.favre.lib:bcrypt:0.8.0'
 
 
-    implementation 'com.github.6Sides:data-utils:aa7df8eb62'
+    implementation 'com.github.6Sides:data-utils:7419b821b1'
 
     implementation platform('com.amazonaws:aws-java-sdk-bom:1.11.228')
     implementation 'com.amazonaws:aws-java-sdk-s3'
