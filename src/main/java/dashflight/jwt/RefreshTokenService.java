@@ -1,10 +1,10 @@
 package dashflight.jwt;
 
 import config.parser.ConfigValue;
-import dashflight.jwt.cache.RefreshTokenCache;
-import dashflight.jwt.random.LavaRandom;
-import dashflight.jwt.random.RandomGenerator;
 import javax.xml.bind.DatatypeConverter;
+import net.dashflight.data.random.LavaRandom;
+import net.dashflight.data.random.RandomGenerator;
+import net.dashflight.data.redis.BasicRedisCache;
 
 /**
  * Handles all logic regarding refresh tokens.
@@ -27,7 +27,7 @@ public class RefreshTokenService {
     @ConfigValue("refresh_token_ttl")
     private static int TOKEN_TTL;
 
-    private RefreshTokenCache redisCache = new RefreshTokenCache();;
+    private BasicRedisCache redisCache = new BasicRedisCache();
     private RandomGenerator secureRandom = new LavaRandom();
 
 

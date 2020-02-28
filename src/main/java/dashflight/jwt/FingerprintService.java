@@ -1,11 +1,11 @@
 package dashflight.jwt;
 
-import dashflight.jwt.random.LavaRandom;
-import dashflight.jwt.random.RandomGenerator;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import javax.xml.bind.DatatypeConverter;
+import net.dashflight.data.random.LavaRandom;
+import net.dashflight.data.random.RandomGenerator;
 
 /**
  * Utility for generating token fingerprints to strengthen security of JWTs

@@ -1,8 +1,7 @@
 package dashflight.jwt;
 
-
-import dashflight.jwt.keys.DefaultRSAKeyManager;
-import dashflight.jwt.keys.RSAKeyManager;
+import net.dashflight.data.keys.DefaultRSAKeyManager;
+import net.dashflight.data.keys.RSAKeyManager;
 
 /**
  * Base class for services handling Jwt manipulation.
