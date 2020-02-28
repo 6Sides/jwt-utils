@@ -29,7 +29,7 @@ public class JwtCreator extends JwtOperator {
             String token = JWT.create()
                             .withIssuer(ISSUER)
                             .withIssuedAt(new Date())
-                            .withExpiresAt(new Date(System.currentTimeMillis() + ACCESS_TOKEN_TTL * 1000))
+                            .withExpiresAt(new Date(System.currentTimeMillis() + ACCESS_TOKEN_TTL))
                             .withClaim("user_id", userId)
                             .withClaim("user_fingerprint", fgpService.hashFingerprint(fgp))
                             .sign(Algorithm.RSA512(null, keyManager.getPrivateKey()));

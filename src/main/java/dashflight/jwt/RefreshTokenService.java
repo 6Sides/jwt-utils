@@ -44,7 +44,7 @@ public class RefreshTokenService {
 
         String token = DatatypeConverter.printHexBinary(randBytes);
 
-        if (redisCache.setWithExpiry(token, TOKEN_TTL*1000, userId)) {
+        if (redisCache.setWithExpiry(token, TOKEN_TTL, userId)) {
             // If token was set, return it
             return token;
         }
