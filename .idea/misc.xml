@@ -3,6 +3,7 @@
   <component name="EntryPointsManager">
     <writeAnnotations>
       <writeAnnotation name="config.parser.ConfigValue" />
+      <writeAnnotation name="net.dashflight.data.ConfigValue" />
     </writeAnnotations>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />

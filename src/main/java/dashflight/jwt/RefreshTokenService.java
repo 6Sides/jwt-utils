@@ -1,10 +1,12 @@
 package dashflight.jwt;
 
-import config.parser.ConfigValue;
 import javax.xml.bind.DatatypeConverter;
+import net.dashflight.data.ConfigValue;
+import net.dashflight.data.ConfigurableDataSource;
 import net.dashflight.data.random.LavaRandom;
 import net.dashflight.data.random.RandomGenerator;
-import net.dashflight.data.redis.BasicRedisCache;
+import net.dashflight.data.redis.RedisClient;
+import net.dashflight.data.redis.RedisFactory;
 
 /**
  * Handles all logic regarding refresh tokens.
@@ -13,7 +15,7 @@ import net.dashflight.data.redis.BasicRedisCache;
  * obtain JWT access tokens. Refresh tokens only interface with
  * our authentication servers, never the authorization servers.
  */
-public class RefreshTokenService {
+public class RefreshTokenService extends ConfigurableDataSource {
 
     /**
      * Size of the refresh token. The token hash returned to the
@@ -27,8 +29,13 @@ public class RefreshTokenService {
     @ConfigValue("refresh_token_ttl")
     private static int TOKEN_TTL;
 
-    private BasicRedisCache redisCache = new BasicRedisCache();
+    private RedisClient redisCache = RedisFactory.withDefaults();
     private RandomGenerator secureRandom = new LavaRandom();
+
+
+    public RefreshTokenService() {
+        super("jwt-utils");
+    }
 
 
     /**

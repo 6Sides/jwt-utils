@@ -5,14 +5,15 @@ import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.auth0.jwt.interfaces.JWTVerifier;
-import net.dashflight.data.redis.BasicRedisCache;
+import net.dashflight.data.redis.RedisClient;
+import net.dashflight.data.redis.RedisFactory;
 
 /**
  * Handles verifying and decoding JWTs
  */
 public class JwtVerifier extends JwtOperator {
 
-    private BasicRedisCache jwtCache = new BasicRedisCache();
+    private RedisClient jwtCache = RedisFactory.withDefaults();
 
     /**
      * Decodes a JWT and returns it if it is valid
