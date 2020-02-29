@@ -5,7 +5,7 @@ import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTCreationException;
 import java.time.Instant;
 import java.util.Date;
-import net.dashflight.data.ConfigValue;
+import net.dashflight.data.config.ConfigValue;
 
 /**
  * Handles creating JWTs

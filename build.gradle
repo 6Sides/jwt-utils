@@ -30,10 +30,10 @@ dependencies {
     // JWT - Library to create & verify JWTs
     compile 'com.auth0:java-jwt:3.8.1'
 
-    // Bcrypt - Used for password hashing & verification
-    implementation 'at.favre.lib:bcrypt:0.8.0'
+    implementation 'com.github.6Sides:data-utils:fefbd8cedc'
 
-    implementation 'com.github.6Sides:data-utils:d4e9670e4e'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-properties:2.8.8'
+
 
     implementation platform('com.amazonaws:aws-java-sdk-bom:1.11.228')
     implementation 'com.amazonaws:aws-java-sdk-s3'
