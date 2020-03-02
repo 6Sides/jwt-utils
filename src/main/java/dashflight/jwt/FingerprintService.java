@@ -3,9 +3,9 @@ package dashflight.jwt;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
 import javax.xml.bind.DatatypeConverter;
-import net.dashflight.data.random.LavaRandom;
-import net.dashflight.data.random.RandomGenerator;
+import net.dashflight.data.random.SecureLavaRandom;
 
 /**
  * Utility for generating token fingerprints to strengthen security of JWTs
@@ -14,12 +14,12 @@ public class FingerprintService {
 
     private static final int FINGERPRINT_LENGTH = 64;
 
-    private RandomGenerator secureRandom;
+    private SecureRandom secureRandom;
     private MessageDigest digest;
 
 
     public FingerprintService() {
-        this.secureRandom = new LavaRandom();
+        this.secureRandom = new SecureLavaRandom();
 
         try {
             this.digest = MessageDigest.getInstance("SHA-256");

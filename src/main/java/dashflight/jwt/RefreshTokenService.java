@@ -1,10 +1,10 @@
 package dashflight.jwt;
 
+import java.security.SecureRandom;
 import javax.xml.bind.DatatypeConverter;
 import net.dashflight.data.config.ConfigValue;
 import net.dashflight.data.config.Configurable;
-import net.dashflight.data.random.LavaRandom;
-import net.dashflight.data.random.RandomGenerator;
+import net.dashflight.data.random.SecureLavaRandom;
 import net.dashflight.data.redis.RedisClient;
 import net.dashflight.data.redis.RedisFactory;
 
@@ -30,7 +30,7 @@ public class RefreshTokenService implements Configurable {
     private int TOKEN_TTL;
 
     private RedisClient redisCache = RedisFactory.withDefaults();
-    private RandomGenerator secureRandom = new LavaRandom();
+    private SecureRandom secureRandom = new SecureLavaRandom();
 
 
     public RefreshTokenService() {
