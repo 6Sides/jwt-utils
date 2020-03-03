@@ -5,7 +5,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import javax.xml.bind.DatatypeConverter;
-import net.dashflight.data.random.SecureLavaRandom;
+import net.dashflight.data.random.LavaRandom;
 
 /**
  * Utility for generating token fingerprints to strengthen security of JWTs
@@ -19,7 +19,7 @@ public class FingerprintService {
 
 
     public FingerprintService() {
-        this.secureRandom = new SecureLavaRandom();
+        this.secureRandom = new LavaRandom();
 
         try {
             this.digest = MessageDigest.getInstance("SHA-256");
