@@ -30,7 +30,7 @@ dependencies {
     // JWT - Library to create & verify JWTs
     compile 'com.auth0:java-jwt:3.8.1'
 
-    implementation 'com.github.6Sides:data-utils:b4dca00a5b'
+    implementation 'com.github.6Sides:data-utils:ac6aa08e6e'
 
     implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-properties:2.8.8'
 
