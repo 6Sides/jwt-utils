@@ -12,7 +12,7 @@ public class JwtUtil {
         try {
             result = jwtVerifier.decodeJwtToken(token, tokenFgp);
         } catch (JWTVerificationException e) {
-            e.printStackTrace();
+            // e.printStackTrace();
         }
 
         return result;
